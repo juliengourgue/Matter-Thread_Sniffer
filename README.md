@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This sniffer capture IEEE802.15.4 packets to analyze them.
-This project is focus on the **Matter/Thread** protocol.
+This sniffer captures IEEE802.15.4 packets to analyze them.
+This project is developped for the **Matter/Thread** protocol not for all protocol that used IEEE802.15.4.
 The sniffer is a CLI tool made in Python using the Click library.
 
-To capture packet over the NRF52840 Dongle the sniffer use the Python module developed by  Nordic Semiconductor ASA : 
+To capture packets over the NRF52840 Dongle the sniffer uses the Python module developed by  Nordic Semiconductor ASA : 
 [nrf802154_sniffer.py](https://github.com/NordicSemiconductor/nRF-Sniffer-for-802.15.4/blob/master/nrf802154_sniffer/nrf802154_sniffer.py)
 
 
