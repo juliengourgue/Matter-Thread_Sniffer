@@ -1,0 +1,9 @@
+appdirs==1.4.4
+click==8.1.8
+lxml==5.3.1
+packaging==24.2
+prettytable==3.16.0
+pyserial==3.5
+pyshark==0.6
+termcolor==3.0.1
+wcwidth==0.2.13
