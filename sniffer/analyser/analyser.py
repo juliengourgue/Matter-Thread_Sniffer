@@ -1,3 +1,5 @@
+# @author  Julien Gourgue
+
 #Module imports
 import pyshark
 import ipaddress

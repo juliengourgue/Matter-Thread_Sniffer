@@ -1,3 +1,4 @@
+# @author  Julien Gourgue
 from .ieee_layer import IEEE_layer
 from .mle_layer import MLE_layer
 

@@ -1,3 +1,4 @@
+@author  Julien Gourgue
 # IEEE802.15.4 Packet Sniffer 
 
 ## Introduction
@@ -47,7 +48,7 @@ Options:
 - `.` specifies that we want to save the pcap file in the current directory.
 
 ```bash
-sniff start-capture -c 15 --dev /dev/ttyACM0 -f test --duration 15 .
+sniff capture -c 15 --dev /dev/ttyACM0 -f test --duration 15 .
 ```
 
 The output will be :

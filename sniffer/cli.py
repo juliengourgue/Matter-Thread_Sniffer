@@ -1,3 +1,4 @@
+# @author  Julien Gourgue
 import click
 import time
 from prettytable import PrettyTable

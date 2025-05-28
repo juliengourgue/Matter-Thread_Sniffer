@@ -1,3 +1,4 @@
+# @author  Julien Gourgue
 from prettytable import PrettyTable
 
 class PacketExchange:

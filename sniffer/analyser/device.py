@@ -1,3 +1,4 @@
+# @author  Julien Gourgue
 from .packet import Packet
 
 class Device:

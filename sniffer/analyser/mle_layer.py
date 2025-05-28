@@ -1,5 +1,5 @@
+# @author  Julien Gourgue
 #Class to represent layer in MLE packet under the IEEE802.15.4
-#6LoWPAN + IPv6 + UDP + MLE
 multicast_ipv6 = ["ff02::1", "ff02::2", "ff03::1", "ff03::2"]
 
 class MLE_layer():
@@ -7,7 +7,7 @@ class MLE_layer():
         self.raw_data = wpan_raw_data
         self.packet_obj = packet_obj
         self.type = None
-        self.data_length=None #TODO
+        self.data_length=None
         self.src = self.dst = None #IPv6
         self.extract_data()
         

@@ -1,3 +1,4 @@
+# @author  Julien Gourgue
 class IEEE_layer():
     def __init__(self, wpan_raw_data, packet_obj):
         self.wpan_raw_data = wpan_raw_data

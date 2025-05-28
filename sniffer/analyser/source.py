@@ -1,3 +1,4 @@
+# @author  Julien Gourgue
 from .packet import Packet
 
 #Class thar represent source at the IEEE Layer (MAC)
