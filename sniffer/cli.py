@@ -21,7 +21,7 @@ def capture(path, channel, pcap_file, duration, dev) :
     filename = path + pcap_file+'.pcap' if pcap_file is not None else f"{path}sniff_{int(time.time() * 1000)}.pcap"
     sniffer = Nrf802154Sniffer()
     if channel is None :
-        channel = channel_founder(sniffer, dev, duration=5)
+        channel = channel_finder(sniffer, dev, duration=5)
         pass 
     
     print(f"Start capturing IEEE802.15.4 packet on the channel:{channel} during {duration} seconds ...")
@@ -35,7 +35,7 @@ def capture(path, channel, pcap_file, duration, dev) :
 @click.command(help="Determine if there is communication on one of the channels (from 11 to 26) and returns the first channel where it captures packets.")
 @click.option("--dev", type=click.Path(exists=True), required=True, help="The path of the NRF dongle. Use `ls dev/tty*` to list available serial devices")
 @click.option("--stop", required=False, help="By default set to True if set to False, the channel founder will listen every channel doesn't stop until the end" )
-def channel_founder(dev, stop):
+def channel_finder(dev, stop):
     sniffer = Nrf802154Sniffer()
     stop = bool(stop)
     if stop == False:
@@ -49,7 +49,7 @@ def analyser_cli(path):
     CliAnalyser(path)
 
 sniff.add_command(capture)
-sniff.add_command(channel_founder)
+sniff.add_command(channel_finder)
 sniff.add_command(analyser_cli)
 
 

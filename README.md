@@ -58,10 +58,10 @@ Start capturing IEEE802.15.4 packets on the channel:15 during 15 seconds ...
 Capture finished and saved in ./test.pcap
 ```
 
-### channel-founder
+### channel-finder
 
 ```
-Usage: sniff channel-founder [OPTIONS]
+Usage: sniff channel-finder [OPTIONS]
 
   Determine if there is communication on one of the channels (from 11 to 26) and
   returns the first channel where it captures packets.
@@ -99,7 +99,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/juliengourgue/Matter-Thread_Sniffer.git
-cd MaThPot/sniffer
+cd Matter-Thread_Sniffer
 ```
 ## Configuration
 
